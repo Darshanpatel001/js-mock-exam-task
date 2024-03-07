@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Create an array to store objects
+let arrayOfObjects = [];
+
+// Function to insert object into array
+function insertObject(object) {
+    if (arrayOfObjects.length < 10) {
+        arrayOfObjects.push(object);
+        console.log("Object inserted successfully.");
+    } else {
+        console.log("Array limit reached. Cannot insert more objects.");
+    }
+}
+
+// Example objects to insert into the array
+let object1 = { name: "John", age: 30 };
+let object2 = { name: "Alice", age: 25 };
+let object3 = { name: "Bob", age: 35 };
+let object4 = { name: "Bob", age: 35 };
+let object5 = { name: "Bob", age: 35 };
+let object6 = { name: "Bob", age: 35 };
+let object7 = { name: "Bob", age: 35 };
+let object8 = { name: "Bob", age: 35 };
+let object9 = { name: "Bob", age: 35 };
+let object10 = { name: "Bob", age: 35 };
+
+// Insert objects into the array
+insertObject(object1);
+insertObject(object2);
+insertObject(object3);
+insertObject(object4);
+insertObject(object5);
+insertObject(object6);
+insertObject(object7);
+insertObject(object8);
+insertObject(object9);
+insertObject(object10);
+// insertObject(object11);
+
+// Log the array
+console.log(arrayOfObjects);
+
+    </script>
+</body>
+</html>

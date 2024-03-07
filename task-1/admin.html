@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<center>  <h1>click and see youre avg and grade </h1> <br>
+    <p>youre final exam marks </p> <br>
+    <button style="width: 100%;height: 100%;padding-top:  30px;padding-bottom: 30px; color: black;font-size: 20px;" onclick="finalexam()"> click here </button></center>
+    <h3 id="title"></h3>
+    <h2 id="next"></h2>
+</body>
+
+<script>
+       
+    function finalexam ()
+    {
+        let first_subject = 90
+            let second_subject =90
+            let third_subject =80
+            let fourth_subject = 70
+
+            document.getElementById("title").innerHTML =first_subject;
+            document.getElementById("title").innerHTML ="mark of second_subject = ",second_subject;
+            document.getElementById("title").innerHTML ="mark of third_subject = ",third_subject;
+            document.getElementById("title").innerHTML ="mark of fourth_subject = ",fourth_subject;
+
+            let ave = first_subject + second_subject + third_subject + fourth_subject;
+
+            let result = ave/4;
+            document.getElementById("title").innerHTML =result,"mark avg";
+            
+            if(result>90 && result<=100)
+            {
+                 document.getElementById("next").innerHTML= "Grade = A",result;
+            }
+            else if(result>75 && result<=90)
+            {
+               document.getElementById("next").innerHTML =result,"Grade = b";
+            }
+            else if(result>60 && result<=75)
+            {
+                document.getElementById("next").innerHTML =result,"Grade = c";
+            }
+            else if(result>40 && result<=60)
+            {
+                document.getElementById("next").innerHTML =result,"Grade = d";
+            }
+            else if(result>0 && result<=40)
+            {
+                document.getElementById("next").innerHTML =result,"you are in fial";
+            }
+            
+            else
+            {
+                console.log("Enter valid details");
+            }
+    }
+    
+    </script>
+</script>
+</html>
